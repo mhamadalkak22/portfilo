@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  html{
+    background-color: black;
+    cursor: url(https://img.icons8.com/arcade/40/cursor.png), auto;
+  }
+  @keyframes fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  .animate-fall {
+    animation: fall linear infinite;
+  }
+  @media only screen and (max-width: 320px){
+    .bn{
+      width: 40px !important;
+    }
+    }
