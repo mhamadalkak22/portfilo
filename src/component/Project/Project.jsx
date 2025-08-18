@@ -13,14 +13,16 @@ import img7 from '../../assets/img-7.png'
 import img8 from '../../assets/img-8.png'
 import img9 from '../../assets/img-9.png'
 import img11 from '../../assets/img-11.png'
+import tastezy from '../../assets/tastezy.jpg'
 import { Link } from 'react-router-dom';
 export default function Project() {
   const [visibleCards, setVisibleCards] = useState(6);
 const [isShowMoreVisible, setIsShowMoreVisible] = useState(true);
 
 const showMore = () => {
-  setVisibleCards((prev) => prev + 6);
-  setIsShowMoreVisible(false); // إخفاء زر "Show More"
+  const next = Math.min(visibleCards + 6, cardsData.length);
+  setVisibleCards(next);
+  setIsShowMoreVisible(next < cardsData.length); 
 };
 
 const showLess = () => {
@@ -165,6 +167,18 @@ const showLess = () => {
             text2: 'Bootstrap',         
              links: [
               { href: 'https://game.aveneme.com/', icon: <FaLink />, text: 'Visit Site' }
+            ],
+          }
+          ,
+          {
+            id: 12,
+            image:  tastezy,
+            title: 'Tastezy',
+            subtitle: 'Tastezy — E-commerce platform delivering authentic homemade pickles & sweets across India, blending traditional flavors with a seamless shopping experience.',
+            text1: 'React js',
+            text2: 'Express, TypeScript ,Sql',         
+             links: [
+              { href: 'https://www.tastezy.in/', icon: <FaLink />, text: 'Visit Site' }
             ],
           }
 

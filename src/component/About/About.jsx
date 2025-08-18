@@ -39,13 +39,13 @@ export default function About() {
     <>
       <div className="bg-black text-white  py-20">
         <div className="container mx-auto px-8 md:px-16 lg:px-24">
-          <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
-          <div className="flex flex-col md:flex-row items-center md:space-x-12">
+          <h2 className="text-4xl font-bold text-center mb-12 font-title">About Me</h2>
+          <div className="flex flex-col md:flex-row items-center md:space-x-12 font-body">
             <div className="flex-1">
-              <h2 className="text-[2rem] md:text-5xl lg:text-2xl    font-bold mt-16   mb-7 text-[#83dbff]">
+              <h2 className="text-[2rem] md:text-5xl lg:text-2xl  font-title  font-bold mt-16   mb-7 text-[#83dbff]">
                 Who I am?
               </h2>
-              <p className="text-lg mb-8">
+              <p className="text-lg mb-8 font-body">
                 My name is Mhamad. I am a professional and enthusiastic programmer
                 in my daily life. I am a quick learner with a self-learning
                 attitude. I love to learn and explore new technologies and am

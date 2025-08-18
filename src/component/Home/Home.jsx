@@ -14,6 +14,7 @@ export default function Home() {
 
   return (
     <div >
+     
  <div className="bg-black text-white text-center py-16 relative z-20" data-aos="zoom-in-up">
   <div className="relative w-full max-w-[600px] mx-auto">
     {/* الصورة */}
